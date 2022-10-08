@@ -1,7 +1,6 @@
 # Rota-coordination
 
-# R code for constructing weekend rota
-
+``` r{create rota}
 # R code for constructing weekend rota
 library(dplyr)
 library(stringr)
@@ -37,3 +36,4 @@ rota$day <- gsub("Tuesday", "BH Tuesday", rota$day)
 rota$day <- gsub("Friday", "BH Friday", rota$day) 
 
 write.csv(rota, 'weekend_rota.csv', row.names =F)
+``` 
